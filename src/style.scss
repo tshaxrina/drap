@@ -128,9 +128,9 @@ background-color: palevioletred;
 }
 .empty {
 display: inline-block;
-height: 20px;
+
 min-height: 160px;
-width: 380px;
+width: 370px;
 margin: 10px;
 border-radius: 15px;
 background-color: black;
@@ -160,7 +160,6 @@ display: flex;
 .s_head {
 display: flex;
 color: white;
-position: relative;
 }
 .fill {
 position: relative;
@@ -240,17 +239,14 @@ right: 10px;
 color: white;
 }
 .s_head a img {
-top: 10px;
-position: absolute;
+margin-top: 20px;
+margin-left: 10px;
 }
 .s_head .info {
-left: 36px;
-position: absolute;
+margin-top: 10px;
+margin-left: 8px;
 }
 .s_head button {
-top: 10px;
-right: 1px;
-position: absolute;
 background: none;
 border-width: 0px;
 }
@@ -268,9 +264,85 @@ height: 100vh;
 .s_footer {
   margin-top: 220px;
 }
-.col {
-  font-size: 15px;
+.empty {
+	span {
+		font-size: 24px;
+		font-weight: bold;
+		text-transform: capitalize;
+	}
+
+	.col {
+		width: 100%;
+		border-radius: 10px;
+	}
+
+	&.hovered {
+		border: 3px dashed black;
+		filter: blur(2px);
+	}
+}
+
+.invisible {
+	display: none;
+}
+
+.card {
+	background-color: #555;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+
+	&:hover {
+		background-color: lighten(#555, 5%);
+	}
+
+	&[draggable="true"] {
+		border: 2px dashed black;
+	}
+
+	.card-header {
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+
+	.card-description {
+		font-size: 14px;
+	}
+}
+.s_head {
+  color: #9FADBC;
+  padding: 8px, 12px, 8.8px, 12px;
+}
+.s_body {
+  position: relative;
+}
+.line {
+  height: 1px;
   background-color: #555;
-  margin: 5px;
-  border-radius: 3px;
+}
+.s_menu {
+  color: #9FADBC;
+  margin-left: 10px;
+  margin-top: 15px;
+  gap: 10px;
+}
+.s_menu img {
+  height: 16px;
+  width: 16px;
+}
+.r {
+  margin-right: 10px;
+}
+.pink {
+  background-color: #CD5A91;
+  height: 20px;
+  width: 20px;
+  border-radius: 2px;
+}
+.f {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #9FADBC;
 }
