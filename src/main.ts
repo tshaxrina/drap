@@ -3,10 +3,10 @@ import {reloadTasks, setDragDrop} from '../modules/ui'
 import { v4 as uuidv4 } from "uuid";
 
 const empties = document.querySelectorAll<HTMLDivElement>(".empty");
-let create = document.querySelector<HTMLButtonElement>(".create");
+let create: any = document.querySelector<HTMLButtonElement>(".create");
 let modal: any = document.querySelector<HTMLDivElement>(".modal");
-let modal_close = document.querySelector<HTMLButtonElement>(".x");
-let add_todos = document.querySelector<HTMLButtonElement>(".add_todos");
+let modal_close: any = document.querySelector<HTMLButtonElement>(".x");
+let add_todos: any = document.querySelector<HTMLButtonElement>(".add_todos");
 let form = document.forms.namedItem("add_task") as HTMLFormElement;
 let places: any = document.querySelectorAll<HTMLDivElement>(".empty .col");
 
